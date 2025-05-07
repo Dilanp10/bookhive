@@ -1,0 +1,5 @@
+# Redirección de llamadas API al backend en Render
+/api/*  https://backend-bookhive-5.onrender.com/api/:splat  200
+
+# Enrutamiento de SPA de React (para que funcione el router)
+/*    /index.html   200
