@@ -1,56 +1,46 @@
-:
+# 📚 BookHive
 
-📚 BookHive
-BookHive es una aplicación web que permite a los usuarios crear perfiles personalizados para obtener recomendaciones de libros adaptadas a su grupo etario, marcarlos como favoritos y administrarlos fácilmente.
+**BookHive** es una aplicación web que permite a los usuarios crear perfiles personalizados para obtener recomendaciones de libros adaptadas a su grupo etario, marcarlos como favoritos y administrarlos fácilmente.
 
-🚀 Funcionalidades
-👤 Sistema de roles de usuario
-🔐 Registro como usuario admin o común
+---
 
-🛡️ Acceso diferenciado según rol de usuario
+## 🚀 Funcionalidades
 
-📖 Administradores pueden crear nuevos libros en el sistema
+### 👤 Sistema de roles de usuario
+- 🔐 Registro como usuario **admin** o **común**.
+- 🛡️ Acceso diferenciado según el rol.
 
-🔑 Credenciales de demostración con rol de admin: 
+### 📚 Gestión de libros
+- ➕ *(Admin)* Creación de nuevos libros con detalles completos.
+- 🔍 Búsqueda e integración con la API pública de Google Books.
+- 💾 Marcado de libros como favoritos por perfil.
+- 🗑️ Posibilidad de eliminar libros favoritos.
 
-Usuario: demo@bookhive.com
+### 👥 Perfiles personalizados
+- ✨ Registro e inicio de sesión de usuarios.
+- 👥 Creación de múltiples perfiles por usuario.
+- 🧒 Recomendaciones de libros personalizadas por edad.
+- 🔐 Rutas protegidas con autenticación JWT.
 
-Contraseña: 123456
+---
 
-📚 Gestión de libros
-➕ (Admin) Creación de nuevos libros con detalles completos
+## 🧪 Credenciales de demostración (Admin)
 
-🔍 Búsqueda e integración con la API pública de Google Books
+- **Usuario:** `demo@bookhive.com`  
+- **Contraseña:** `123456`
 
-💾 Marcado de libros como favoritos por perfil
+---
 
-🗑️ Posibilidad de eliminar libros favoritos
+## 🛠️ Tecnologías utilizadas
 
-👥 Perfiles personalizados
-✨ Registro e inicio de sesión de usuarios
+### Frontend
+- React  
+- React Router DOM  
+- Axios  
+- Tailwind CSS  
 
-👥 Creación de múltiples perfiles por usuario
-
-🧒 Recomendaciones de libros personalizadas por edad
-
-🔐 Rutas protegidas con autenticación JWT
-
-�‍💻 Tecnologías utilizadas
-Frontend
-React
-
-React Router DOM
-
-Axios
-
-Tailwind CSS
-
-Backend
-Node.js
-
-Express.js
-
-MongoDB (con Mongoose)
-
-JSON Web Tokens (JWT)
-
+### Backend
+- Node.js  
+- Express.js  
+- MongoDB (con Mongoose)  
+- JSON Web Tokens (JWT)  
