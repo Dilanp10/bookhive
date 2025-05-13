@@ -26,7 +26,7 @@ function BookDetail() {
       if (isMongoId(bookId)) {
         try {
           const localRes = await axios.get(
-            `http://localhost:5000/api/books/${bookId}`,
+            `https://backend-bookhive.onrender.com/api/books/${bookId}`,
             { headers: { Authorization: `Bearer ${token}` } }
           );
           setBook({ ...localRes.data, type: "local" });

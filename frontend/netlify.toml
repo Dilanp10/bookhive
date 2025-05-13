@@ -1,0 +1,10 @@
+[build]
+  # Vite genera 'dist/' por defecto
+  publish = "dist"
+  command = "npm run build"  # o tu comando de build si fuera distinto
+
+[[redirects]]
+  from     = "/api/*"
+  to       = "https://backend-bookhive.onrender.com/api/:splat"
+  status   = 200
+  force    = true

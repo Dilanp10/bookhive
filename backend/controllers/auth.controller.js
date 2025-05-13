@@ -1,3 +1,4 @@
+// controllers/auth.controller.js
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
@@ -27,7 +28,6 @@ export async function register(req, res) {
 
     await newUser.save();
 
-    // Devolver directamente el usuario creado (menos password)
     res.status(201).json({
       user: {
         id: newUser._id,
@@ -78,10 +78,9 @@ export async function login(req, res) {
   }
 }
 
-// Devuelve datos del usuario logueado (debes usar middleware `auth` antes)
+// Devuelve datos del usuario logueado
 export async function getMe(req, res) {
   try {
-    // `req.user` proviene de tu middleware de autenticación que decodifica el JWT
     const user = await User.findById(req.user.id).select('-password');
     if (!user)
       return res.status(404).json({ message: 'Usuario no encontrado' });

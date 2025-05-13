@@ -15,7 +15,7 @@ export default function Catalogo() {
 
   const fetchLibros = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/libros", {
+      const res = await axios.get("https://backend-bookhive.onrender.com/api/libros", {
         headers: { Authorization: `Bearer ${token}` },
         params: {
           genero,
@@ -38,7 +38,7 @@ export default function Catalogo() {
   const handleAddToWatchlist = async (libroId) => {
     try {
       await axios.post(
-        `http://localhost:3000/api/perfiles/${perfil._id}/watchlist`,
+        `https://backend-bookhive.onrender.com/api/perfiles/${perfil._id}/watchlist`,
         { libroId },
         { headers: { Authorization: `Bearer ${token}` } }
       );

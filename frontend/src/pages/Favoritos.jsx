@@ -29,7 +29,7 @@ function Favoritos() {
       setProfile(parsedProfile);
   
       const response = await axios.get(
-        `http://localhost:5000/api/favorites`,
+        `https://backend-bookhive.onrender.com/api/favorites`,
         {
           params: { profileId: parsedProfile._id },
           headers: { Authorization: `Bearer ${token}` },
@@ -84,7 +84,7 @@ function Favoritos() {
       const timeout = setTimeout(() => source.cancel("Timeout"), 8000);
   
       const response = await axios.delete(
-        `http://localhost:5000/api/favorites/${favoriteId}`,
+        `https://backend-bookhive.onrender.com/api/favorites/${favoriteId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

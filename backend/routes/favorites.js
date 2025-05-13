@@ -1,7 +1,7 @@
 import express from 'express';
 import Favorite from '../models/Favorite.js';
 import ManualBook from '../models/ManualBook.js';
-import Book from '../models/Book.js';
+import Book from '../models/book.js';
 import mongoose from 'mongoose';
 import jwt from 'jsonwebtoken';
 

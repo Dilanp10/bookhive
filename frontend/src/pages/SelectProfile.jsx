@@ -11,7 +11,7 @@ export default function SelectProfile() {
     const fetchProfiles = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/profiles", {
+        const res = await axios.get("https://backend-bookhive.onrender.com/api/profiles", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

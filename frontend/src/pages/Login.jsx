@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "react-hot-toast";
+const API = import.meta.env.VITE_API_URL
 
 export default function Login() {
   const { login } = useAuth();
@@ -14,7 +15,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
+      const res = await axios.post("https://backend-bookhive.onrender.com/api/auth/login", {
         email,
         password,
       });

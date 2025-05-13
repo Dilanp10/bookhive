@@ -14,7 +14,7 @@ export default function LibroDetalle() {
   useEffect(() => {
     const fetchLibro = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/libros/${id}`, {
+        const res = await axios.get(`https://backend-bookhive.onrender.com/api/libros/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -33,7 +33,7 @@ export default function LibroDetalle() {
   const agregarAWL = async () => {
     try {
       await axios.post(
-        `http://localhost:3000/api/perfiles/${perfil._id}/watchlist`,
+        `https://backend-bookhive.onrender.com/api/perfiles/${perfil._id}/watchlist`,
         { libroId: libro._id },
         { headers: { Authorization: `Bearer ${token}` } }
       );
