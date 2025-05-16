@@ -44,3 +44,5 @@
 - Express.js  
 - MongoDB (con Mongoose)  
 - JSON Web Tokens (JWT)  
+
+### desplegado en netlify: https://courageous-selkie-2e72f8.netlify.app/
