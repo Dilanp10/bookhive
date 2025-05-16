@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import authRoutes from "./routes/auth.routes.js"; // Asegúrate de que esta ruta esté correctamente importada
 import profileRoutes from './routes/profile.routes.js'; // Asegúrate de que esta ruta esté correctamente importada
 import bookRoutes from './routes/bookRoutes.js';
-import manualBookRoutes from './routes/manualBook.routes.js';
+import manualBookRoutes from './routes/manualBookRoutes.js';
 import favoritesRouter from './routes/favorites.js';
 
 // Verificación temprana

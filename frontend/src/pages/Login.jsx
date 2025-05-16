@@ -133,12 +133,11 @@ export default function Login() {
           <div className="mt-6 text-center">
             <p className="text-sm text-white/70 dark:text-gray-400">
               ¿No tienes una cuenta?{" "}
-              <a
-                href="/Register"
-                className="text-cyan-300 hover:text-cyan-200 font-medium transition"
-              >
-                Regístrate
-              </a>
+              <button
+              onClick={() => navigate("/Register")}
+              className="text-cyan-300 hover:text-cyan-200 font-medium transition bg-transparent border-none p-0 cursor-pointer">
+              Regístrate
+        </button>
             </p>
           </div>
         </form>

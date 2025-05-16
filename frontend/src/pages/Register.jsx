@@ -109,12 +109,11 @@ export default function Register() {
         <div className="mt-6 text-center">
           <p className="text-sm text-white/70">
             ¿Ya tienes una cuenta?{' '}
-            <a 
-              href="/login" 
-              className="text-cyan-300 hover:text-cyan-200 font-medium transition"
-            >
+            <button
+              onClick={() => navigate("/login")}
+              className="text-cyan-300 hover:text-cyan-200 font-medium transition bg-transparent border-none p-0 cursor-pointer">
               Inicia sesión
-            </a>
+          </button>
           </p>
         </div>
       </div>

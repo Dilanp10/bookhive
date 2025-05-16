@@ -29,7 +29,7 @@ function CrearLibro() {
     }
 
     try {
-      const response = await fetch("/api/manual-books", {
+      const response = await fetch("https://backend-bookhive.onrender.com/api/manual-books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
